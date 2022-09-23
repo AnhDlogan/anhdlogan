@@ -34,7 +34,7 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "id=" + idAdmin +
+                "id=" + id +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", firstName='" + firstName + '\'' +
@@ -43,11 +43,11 @@ public class User {
     }
 
     public Integer getId() {
-        return idAdmin;
+        return id;
     }
 
     public void setId(Integer id) {
-        this.idAdmin = id;
+        this.id = id;
     }
 
     public String getEmail() {
