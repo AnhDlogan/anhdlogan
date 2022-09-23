@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Integer idAdmin;
 
     @Column(nullable = false,unique = true, length = 45)
     private String email;
@@ -34,7 +34,7 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
+                "id=" + idAdmin +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", firstName='" + firstName + '\'' +
@@ -43,11 +43,11 @@ public class User {
     }
 
     public Integer getId() {
-        return id;
+        return idAdmin;
     }
 
     public void setId(Integer id) {
-        this.id = id;
+        this.idAdmin = id;
     }
 
     public String getEmail() {
